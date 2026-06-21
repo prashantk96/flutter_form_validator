@@ -1,5 +1,5 @@
 name: flutter_form_validator
-description: "A new Flutter package project."
+description: "A Flutter package providing form validators, input formatters, localization support, and country-specific validation for India, USA, and UK."
 version: 1.0.0
 
 homepage: https://github.com/prashantk96/flutter_form_validator
