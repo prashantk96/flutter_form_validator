@@ -1,24 +1,81 @@
 # Flutter Field Validator
 
-A powerful Flutter validation package with:
+A powerful Flutter validation package with built-in validators, localization support, and input formatters.
 
-- Global Validators
-- Indian Validators
-- USA Validators
-- UK Validators
-- Credit Card Validation
-- Password Validation
-- Email Validation
-- GST Validation
-- PAN Validation
-- Aadhaar Validation
-- UPI Validation
+## Features
+
+✅ Global Validators
+
+* Email
+* Mobile Number
+* Password
+* URL
+* Credit Card
+* CVV
+* Expiry Date
+
+✅ India Validators
+
+* PAN
+* Aadhaar
+* GST
+* IFSC
+* UPI
+* PIN Code
+* Passport
+* Voter ID
+* Vehicle Number
+* Driving License
+* Bank Account
+
+✅ USA Validators
+
+* SSN
+* ZIP Code
+* EIN
+* Phone Number
+
+✅ UK Validators
+
+* Postcode
+* NINO
+* UTR
+* Phone Number
+
+✅ Input Formatters
+
+* Numbers Only
+* Alphabets Only
+* Alphanumeric
+* No Spaces
+* No Special Characters
+* Email
+* Website
+* PAN Formatter
+* Aadhaar Formatter
+* GST Formatter
+* IFSC Formatter
+* UPI Formatter
+* Length Limit Formatters
+
+✅ Localization
+
+* English
+* Hindi
 
 ## Installation
+
+Add dependency:
 
 ```yaml
 dependencies:
   flutter_field_validator: ^1.0.0
+```
+
+Run:
+
+```bash
+flutter pub get
 ```
 
 ## Import
@@ -27,60 +84,109 @@ dependencies:
 import 'package:flutter_field_validator/flutter_field_validator.dart';
 ```
 
-## Global Validators
+## Usage
+
+### Email Validation
 
 ```dart
-validator: Validators.email
+TextFormField(
+  validator: Validators.email,
+)
 ```
+
+### Mobile Validation
 
 ```dart
-validator: Validators.password
+TextFormField(
+  validator: Validators.mobile,
+)
 ```
+
+### PAN Validation
 
 ```dart
-validator: Validators.mobile
+TextFormField(
+  validator: IndianValidators.pan,
+)
 ```
 
-## Indian Validators
+### Aadhaar Validation
 
 ```dart
-validator: IndianValidators.pan
+TextFormField(
+  validator: IndianValidators.aadhaar,
+)
 ```
+
+### SSN Validation
 
 ```dart
-validator: IndianValidators.aadhaar
+TextFormField(
+  validator: USValidators.ssn,
+)
 ```
+
+### UK Postcode Validation
 
 ```dart
-validator: IndianValidators.gst
+TextFormField(
+  validator: UKValidators.postcode,
+)
 ```
+
+## Input Formatters
+
+### PAN Formatter
 
 ```dart
-validator: IndianValidators.upi
+TextFormField(
+  inputFormatters:
+      ValidatorInputFormatters.panFormatters,
+)
 ```
 
-## USA Validators
+### Mobile Formatter
 
 ```dart
-validator: USValidators.ssn
+TextFormField(
+  inputFormatters:
+      ValidatorInputFormatters.mobileFormatters,
+)
 ```
+
+### Aadhaar Formatter
 
 ```dart
-validator: USValidators.zipCode
+TextFormField(
+  inputFormatters:
+      ValidatorInputFormatters.aadhaarFormatters,
+)
 ```
 
-## UK Validators
+## Localization
+
+Switch language dynamically:
 
 ```dart
-validator: UKValidators.postcode
+ValidatorLocale.current =
+    ValidationLocale.hindi;
 ```
+
+Back to English:
 
 ```dart
-validator: UKValidators.nino
+ValidatorLocale.current =
+    ValidationLocale.english;
 ```
 
-[![Flutter Package CI](https://github.com/prashantk96/flutter_field_validator/actions/workflows/flutter.yml/badge.svg)](https://github.com/prashantk96/flutter_field_validator/actions/workflows/flutter.yml)
+## Example
+
+See the example application included with the package.
+
+## Contributing
+
+Contributions, issues and feature requests are welcome.
 
 ## License
 
-MIT
+MIT License.

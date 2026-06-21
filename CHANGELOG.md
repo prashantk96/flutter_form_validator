@@ -2,49 +2,69 @@
 
 ## 1.0.0
 
-### Features
+### Initial Release
 
-- Global Validators
-- Email Validator
-- Password Validator
-- Mobile Validator
-- URL Validator
+#### Validators
 
-### India Validators
+* Email Validator
+* Mobile Validator
+* Password Validator
+* URL Validator
+* Credit Card Validator
+* CVV Validator
+* Expiry Date Validator
 
-- PAN
-- Aadhaar
-- GST
-- IFSC
-- UPI
-- Passport
-- Voter ID
-- Vehicle Number
-- Driving License
-- PIN Code
+#### India Validators
 
-### USA Validators
+* PAN Validator
+* Aadhaar Validator
+* GST Validator
+* IFSC Validator
+* UPI Validator
+* PIN Code Validator
+* Passport Validator
+* Voter ID Validator
+* Vehicle Number Validator
+* Driving License Validator
+* Bank Account Validator
 
-- SSN
-- ZIP Code
-- EIN
-- Phone Number
+#### USA Validators
 
-### UK Validators
+* SSN Validator
+* ZIP Code Validator
+* EIN Validator
+* US Phone Validator
 
-- Postcode
-- NINO
-- UTR
-- Phone Number
+#### UK Validators
 
-### Advanced Validators
+* Postcode Validator
+* NINO Validator
+* UTR Validator
+* UK Phone Validator
 
-- Credit Card
-- CVV
-- Expiry Date
+#### Input Formatters
 
-### Utilities
+* Numbers Only
+* Alphabets Only
+* Alphanumeric
+* No Spaces
+* No Special Characters
+* Email Formatter
+* Website Formatter
+* PAN Formatter
+* Aadhaar Formatter
+* GST Formatter
+* IFSC Formatter
+* UPI Formatter
+* Length Limit Formatters
 
-- Validator Combine
-- Min Length
-- Max Length
+#### Localization
+
+* English Support
+* Hindi Support
+
+#### Example App
+
+* Complete validator showcase
+* Language switching
+* Formatter examples
