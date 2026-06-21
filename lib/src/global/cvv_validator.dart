@@ -1,4 +1,4 @@
-import 'package:flutter_field_validator/src/core/validation_messages.dart';
+import 'package:flutter_form_validator/src/core/validation_messages.dart';
 
 class CvvValidator {
   static String? validate(String? value, {String? message}) {

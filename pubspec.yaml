@@ -1,12 +1,10 @@
-name: flutter_field_validator
+name: flutter_form_validator
 description: "A new Flutter package project."
 version: 1.0.0
 
-publisher: prashantk96
-
-homepage: https://github.com/prashantk96/flutter_field_validator
-repository: https://github.com/prashantk96/flutter_field_validator
-issue_tracker: https://github.com/prashantk96/flutter_field_validator/issues
+homepage: https://github.com/prashantk96/flutter_form_validator
+repository: https://github.com/prashantk96/flutter_form_validator
+issue_tracker: https://github.com/prashantk96/flutter_form_validator/issues
 
 topics:
   - validation

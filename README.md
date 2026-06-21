@@ -69,7 +69,7 @@ Add dependency:
 
 ```yaml
 dependencies:
-  flutter_field_validator: ^1.0.0
+  flutter_form_validator: ^1.0.0
 ```
 
 Run:
@@ -81,7 +81,7 @@ flutter pub get
 ## Import
 
 ```dart
-import 'package:flutter_field_validator/flutter_field_validator.dart';
+import 'package:flutter_form_validator/flutter_form_validator.dart';
 ```
 
 ## Usage
